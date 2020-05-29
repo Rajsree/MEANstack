@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+//if you use something, you need to tell ts from where to import
+import { PostCreateComponent } from './posts/post-create/post-create.component';
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [ //declare class so angular will be aware of it
+    AppComponent,
+    PostCreateComponent
   ],
   imports: [
     BrowserModule,
